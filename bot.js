@@ -25,4 +25,4 @@ bot.on('message', message => {
 				message.reply(quotes[Math.floor(Math.random() * 4)]);
 			}
 });
-bot.login(process.env.NDE2NzMwMDE0MDY3OTgyMzM3.DXItoQ.0KnH8I1vGjjZhAmfCMqpbhzjGTc);
+bot.login(process.env.BOT_TOKEN);
