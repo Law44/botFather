@@ -8,20 +8,18 @@ var quotes =
 "¿Los piratas son malos? ¿Los marines son los buenos? ¡Estos términos han cambiado siempre a lo largo de la historia! ¡Los niños que nunca han visto la paz y los niños que nunca han visto la guerra tienen valores diferentes! ¡Los que están en la cima determinan lo que está bien y lo que está mal! ¡Este lugar es un terreno neutral! ¿Dicen que la Justicia prevalecerá? ¡Por supuesto que lo hará! ¡Gane quién gane esta guerra se convertirá en la Justicia!", 
 "No confundas mi personalidad con mi actitud. Mi personalidad es quien soy yo, mi actitud depende de quien seas tú."
 ]
-bot.on('message', message => {
-		if (message.content === 'hola') {
-				message.reply('Hola! :D');
-			}
-		if (message.content === '!Alberto') {
+var prefix = '!';
+bot.on('message', message => {		
+		if (message.content === prefix + 'Alberto') {
 				message.reply('Esteeeeeee Meeeeeeeeen');
 			}
-		if (message.content === '!Adri') {
+		if (message.content === prefix + 'Adri') {
 				message.reply('Shurlocotron');
 			}
-		if (message.content === '!DesertFox') {
+		if (message.content === prefix + 'DesertFox') {
 				message.reply('BOMBA DE HUMO! BOMBA DE HUMO!');
 			}
-		if (message.content === '!quote') {
+		if (message.content === prefix + 'quote') {
 				message.reply(quotes[Math.floor(Math.random() * 4)]);
 			}
 });
