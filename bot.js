@@ -20,7 +20,7 @@ bot.on('message', message => {
 				message.reply('BOMBA DE HUMO! BOMBA DE HUMO!');
 			}
 		if (message.content === prefix + 'quote') {
-				message.reply(quotes[Math.floor(Math.random() * 4)]);
+				message.sendMessage(quotes[Math.floor(Math.random() * 4)]);
 			}
 });
 bot.login(process.env.BOT_TOKEN);
