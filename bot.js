@@ -11,9 +11,6 @@ var quotes =
 ]
 var prefix = '!';
 bot.on('message', message => {
-		if (message.content === prefix + 'help') {
-				message.channel.send('!Alberto\n!Adri\n!DesertFox\n!quote');
-			}
 		if (message.content === prefix + 'Alberto') {
 				message.reply('Esteeeeeee Meeeeeeeeen');
 			}
