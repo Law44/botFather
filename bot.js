@@ -20,6 +20,9 @@ bot.on('message', message => {
 		if (message.content === prefix + 'Adri') {
 				message.reply('Shurlocotron');
 			}
+		if (message.content === prefix + 'Christian') {
+				message.reply('Pero me sube la media?');
+			}
 		if (message.content === prefix + 'DesertFox') {
 				message.reply('BOMBA DE HUMO! BOMBA DE HUMO!');
 			}
